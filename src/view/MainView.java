@@ -11,7 +11,7 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 
 import service.EmailService;
-import utils.TextFromMessage;
+import util.TextFromMessage;
 
 public class MainView extends JFrame{
     private DefaultListModel<String> emailListModel;

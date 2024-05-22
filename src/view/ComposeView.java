@@ -9,7 +9,7 @@ import java.util.List;
 import javax.swing.*;
 
 import service.EmailService;
-import utils.AttachmentChooser;
+import util.AttachmentChooser;
 
 public class ComposeView extends JDialog {
     private JTextField toField;

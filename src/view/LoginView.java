@@ -2,11 +2,11 @@ package view;
 
 import javax.swing.*;
 
+import service.EmailService;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import service.EmailService;
 
 public class LoginView extends JFrame {
     private JTextField emailField;
