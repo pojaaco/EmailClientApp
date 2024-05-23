@@ -24,8 +24,6 @@ public class ComposeView extends JDialog {
         setLocationRelativeTo(null);
 
         initUI();
-
-        setVisible(true);
     }
 
     private void initUI() {

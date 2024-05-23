@@ -4,6 +4,6 @@ import view.LoginView;
 
 public class EmailClientApplication {
     public static void main(String[] args) throws Exception {
-        SwingUtilities.invokeLater(() -> new LoginView());
+        SwingUtilities.invokeLater(() -> new LoginView().setVisible(true));
     }
 }

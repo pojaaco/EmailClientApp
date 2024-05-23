@@ -17,7 +17,6 @@ public class LoginView extends JFrame {
         setSize(400, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        setVisible(true);
 
         initUI();
     }
@@ -54,7 +53,7 @@ public class LoginView extends JFrame {
             EmailService.getInstance(email, password);
             JOptionPane.showMessageDialog(this, "Login successful!");
            
-            new MainView();
+            new MainView().setVisible(true);
             dispose();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Invalid email or password", "Login Failed", JOptionPane.ERROR_MESSAGE);

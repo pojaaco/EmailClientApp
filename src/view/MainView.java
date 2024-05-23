@@ -27,7 +27,6 @@ public class MainView extends JFrame{
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        setVisible(true);
 
         addWindowListener(new WindowAdapter() {
             @Override
@@ -65,7 +64,7 @@ public class MainView extends JFrame{
         JPanel bottomPanel = new JPanel();
 
         JButton composeButton = new JButton("Compose");
-        composeButton.addActionListener(e -> new ComposeView());
+        composeButton.addActionListener(e -> new ComposeView().setVisible(true));
         bottomPanel.add(composeButton);
 
         JButton refreshInboxButton = new JButton("Refresh Inbox");
